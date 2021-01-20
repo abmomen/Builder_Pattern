@@ -1,10 +1,10 @@
 ### Builder Design Pattern
+#### The builder pattern allows us to create a complex object step by step by setting it's different properties one by one.
 
-- The builder pattern allows us to create a complex object step by step by setting it's different properties one by one.
+#### Following is an example for making a Hamburger that need to be done step by step like choosing meat type, putting sauces,
+#### giving diffrent type of topping ext. The example code is written in swift programming language.
 
-Following is an example for making a Hamburger that need to be done step by step like choosing meat type, putting sauces,
-giving diffrent type of topping ext. The example code is written in swift programming language.
-
+```swift
 public struct Hamburger {
   public let meat: Meat
   public let sauce: Sauces
@@ -82,3 +82,4 @@ public class HamburgerBuilder {
                      toppings: toppings)
   }
 }
+```
